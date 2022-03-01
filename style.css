@@ -1,0 +1,295 @@
+@font-face {
+    font-family: 'PR Viking';
+    src: url(/Fonts/PR\ Viking.ttf);
+}
+
+:root{
+    --primaryTitleFont: 'PR Viking';
+    --secondaryTitleFont: Georgia, serif;
+    --regularFont: Verdana, sans-serif;
+    --menuTextColor: #ffffff;
+    --menuBackgroundColor: #000000;
+    --menuPrimaryColor: #0097A7;
+    --shadow: 0px 10px 15px rgba(0, 0, 0, 0.8);
+    --cardshadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--regularFont);
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3 {
+    font-family: var(--secondaryTitleFont);
+    text-align: center;
+}
+    h1 {
+        font-family: var(--primaryTitleFont);
+        font-size: 6em;
+    }
+    h2 {
+        font-size: 4em;
+    }
+    h3 {
+        font-size: 3em;
+    }
+
+hr {
+    /* color: var(--menuPrimaryColor); */
+    border: 5px solid var(--menuPrimaryColor);
+    border-radius: 5px;
+    box-shadow: var(--cardshadow);
+}
+
+
+
+/* STATUS */
+.sticky {
+    position: fixed !important;
+    top: -140px !important;
+}
+
+.active {
+    position: relative;
+    top: -5px;
+    height: 5px;
+    margin: 0;
+    background-color: var(--menuPrimaryColor);
+    overflow: hidden;
+}
+
+
+
+/* DIV */
+
+#container {
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: 100%;
+}
+    header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 200px;
+        background-color: var(--menuBackgroundColor);
+        overflow: hidden;
+        z-index: 2;
+    }
+        #rgHeader {
+            position: relative;
+            top: 0;
+            margin: 0 auto;
+            width: 1080px !important;
+        }
+            #rgTitle {
+                position: absolute;
+                top: 0;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                color: var(--menuTextColor);
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: var(--menuBackgroundColor);
+                font-size: 8em;
+                text-shadow: 0 0 5px #ffffff, 0 0 10px #fafafa, 0 0 20px #f0f0f0;
+            }
+        #rgMenu {
+            position: absolute;
+            top: 140px;
+            width: 100%;
+            margin: 0 auto;
+            height: 60px;
+            overflow: visible;
+        }
+            #rgMenu a {
+                font-size: 2em;
+                color: var(--menuTextColor);
+                text-align: center;
+                text-decoration: none;
+            }
+                #dropDown {
+                    float: left;
+                    overflow: hidden;
+                }
+                    #dropbtn{
+                        border: none;
+                        outline: none;
+                        color: var(--menuTextColor);
+                        padding: 4px 30px 24px;
+                        background-color: inherit;
+                    }
+                    #dropbtn i {
+                        margin: 0 0 0 15px;
+                        overflow: visible;
+                        color: var(--menuPrimaryColor);
+                    }
+    article {
+        width: 100%;
+        z-index: 3;
+    }
+        #rgArticle {
+            position: relative;
+            top: 0;
+            margin: 0 auto;
+        }
+            #mainimg {
+                width: 100%;
+                height: 100vh;
+                background-image: url(/Images/prueba.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                box-shadow: var(--shadow);
+            }
+                #mainimg img {
+                    width: 100%;
+                    height: 100%;
+                }
+            #rgArticleMain {
+                margin: 0 auto;
+                width: 1080px;
+            }
+                #events {
+                    height: 470px;
+                }
+                    #events h2 {
+                        margin: 0;
+                        padding-top: 10px;
+                        font-size: 2em;
+                    }
+                    #card {
+                        float: left;
+                        margin: 0 18px;
+                        width: 30%;
+                        height: 470px;
+                        text-align: center;
+                        box-shadow: var(--cardshadow);
+                        background-color: rgba(0, 0, 0, 0.096);
+                        overflow: hidden;
+                    }
+                        #card:hover {
+                            background-color: rgba(0, 0, 0, 0.120);
+                        }
+                    #card button {
+                        border: none;
+                        outline: none;
+                        padding: 6px;
+                        width: 90%;
+                        font-size: 1.3em;
+                        font-family: var(--secondaryTitleFont);
+                        font-weight: bold;
+                        background-color: inherit;
+                    }
+                        .ticket:hover {
+                            background-color: black;
+                        }
+                        .ticket a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                #partner {
+                    height: 540px
+                }
+                    #partner img {
+                        float: left;
+                        width: 20%;
+                    }
+                    #partner p {
+                        padding-left: 250px;
+                        padding-top: 10px;
+                    }
+                    #partner p b {
+                        font-size: 1.1em;
+                    }
+                    #partner a {
+                        text-decoration: none;
+                        color: var(--menuPrimaryColor);
+                        font-weight: bold;
+                    }
+    footer {
+        width: 100%;
+        height: 200px;
+        background-color: black;
+    }
+        #rgFooter {
+            position: relative;
+            top: 0;
+            margin: 0 auto;
+            width: 1080px;
+            height: 200px;
+        }
+            #rgFooterLeft {
+                width: 540px;
+                height: 200px;
+                float: left;
+            }
+                #rgFooterLeft img {
+                    padding: 30px 20px;
+                    height: 90px;
+                }
+                #rgFooterLeft h1 {
+                    position: absolute;
+                    bottom: 30px;
+                    font-size: 2em;
+                    color: white;
+                }
+            #rgFooterMid {
+                margin: 0 auto;
+                width: 1080px;
+            }
+                #rgFooterMid h1 {
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    margin: 0 auto;
+                    padding-top: 40px;
+                    font-size: 2em;
+                    color: white;
+                }
+                #rgFooterMid i {
+                    position: absolute;
+                    margin-top: 95px;
+                    font-size: 50px;
+                    color: white;
+                }
+                #facebook {
+                    transform: translateX(-97px);
+                }
+                #instagram {
+                    transform: translateX(-47px);
+                }
+                #twitter {
+                    transform: translateX(3px);
+                }
+                #youtube {
+                    transform: translateX(53px);
+                }
+            #rgFooterRight {
+                width: 540px;
+                height: 200px;
+                float: right;
+            }
+                #rgFooterRight h1 {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding-top: 20px;
+                    font-size: 2em;
+                    color: white;
+                    text-align: right;
+                }
+                #rgFooterRight p {
+                    top: 0;
+                    padding-top: 75px;
+                    text-align: right;
+                    color: white;
+                }
+                #rgFooterRight a {
+                    text-decoration: none;
+                    color: white;
+                }
