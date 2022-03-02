@@ -37,10 +37,10 @@ Array.from(btns).forEach(item => {
 
 // load document inside menu div
 $(document).ready(function(){
-    $('#rgMenu').load("/menu.html");
+    $('#rgMenu').load("./menu.html");
 });
 $(document).ready(function(){
-    $('#rgArticle').load("/home.html");
+    $('#rgArticle').load("./home.html");
 });
 
 // --- END --- //
